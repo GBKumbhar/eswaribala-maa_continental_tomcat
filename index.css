@@ -1,0 +1,36 @@
+form
+{
+	
+	width:40%;
+	margin-left: 25%;
+}
+
+fieldset
+{
+	border:2px solid red;
+	
+}
+legend
+{
+	text-align: center;
+}
+
+input[type=text]
+{
+	width:40%;
+	margin-bottom: 2%;
+    margin-left: 25%;
+}
+input[type=checkbox]
+{
+	width:15%;
+    
+}
+input[type=submit]
+{
+	width:25%;
+	margin-left: 28%;
+	color: white;
+	background-color: blue;
+    
+}
