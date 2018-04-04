@@ -1,0 +1,1 @@
+powershell.exe -Command "Send-MailMessage -To 'vijayalaxmibb@gmail.com' -From 'Parameswaribala@gmail.com' -Subject 'Tomcat Shutdown' -SmtpServer 'smtp.gmail.com' -Credential 'Parameswaribala@gmail.com' -UseSsl "
