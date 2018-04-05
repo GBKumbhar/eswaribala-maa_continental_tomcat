@@ -1,0 +1,5 @@
+http://www.mediafire.com/file/dgclhp616bl2bm3/apache_2.4.2-x64-openssl-1.0.1c.msi
+
+optional load balancer
+
+"G:\Local disk\ApacheCluster\apachehttp\Apache2.4\bin\htpasswd" -c "G:\Local disk\ApacheCluster\apachehttp\Apache2.4\conf\.htpasswd" admin
