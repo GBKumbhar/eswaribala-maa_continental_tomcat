@@ -1,0 +1,16 @@
+<Realm  	
+	className="org.apache.catalina.realm.JNDIRealm" 
+debug="99"
+connectionURL="ldap://ldap.yourdomain.com" 
+authentication="simple"
+referrals="follow"
+connectionName="ldapquery"
+connectionPassword="password" 
+userSearch="(sAMAccountName={0})"
+userBase="dc=youdomain,dc=com" 
+userSubtree="true" 
+userRoleName="memberOf"
+roleBase="ou=group,dc=yourdomain,dc=com"
+roleSearch="(member={0})"
+roleSubtree="true"
+roleName="CN" />
