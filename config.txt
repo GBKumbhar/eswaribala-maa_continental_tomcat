@@ -1,0 +1,21 @@
+ServerName localhost
+#NameVirtualHost *:72
+
+<VirtualHost *:72>
+<Proxy balancer://mycluster>
+    BalancerMember http://127.0.0.1:8080 min=10 max=100 route=node1 loadfactor=1 status=-D
+    BalancerMember http://127.0.0.1:7070 min=10 max=100 route=node2 loadfactor=1 status=+H
+</Proxy>
+
+    ProxyPreserveHost On
+
+    ProxyPass / balancer://mycluster/ stickysession=JSESSIONID
+    ProxyPassReverse / balancer://mycluster/ stickysession=JSESSIONID
+</VirtualHost>
+<Location /balancer-manager>
+SetHandler balancer-manager
+AuthType Basic
+AuthName "Balancer Manager"
+AuthUserFile "G:/Local disk/ApacheCluster/apachehttp/Apache2.4/conf/.htpasswd"
+Require valid-user
+</Location>
