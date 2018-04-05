@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Context docBase="/ImageDS"
+        path="ImageDS" reloadable="true">
+        <Resource name="jdbc/Test"
+        	auth="Container"
+        	type="javax.sql.DataSource"
+        	maxActive="100"
+        	maxIdle="30"
+        	maxWait="-1"
+        	username="root"
+       	password="vignesh"
+     	driverClassName="com.mysql.jdbc.Driver"
+      	url="jdbc:mysql://localhost/pvrdb">
+        </Resource>
+    </Context>
